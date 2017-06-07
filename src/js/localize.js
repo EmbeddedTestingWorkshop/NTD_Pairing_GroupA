@@ -113,6 +113,7 @@ var localizer = function (){
 
     FixtureFinder.localizePage = function(lang){
         FixtureFinder.currentLanguage = lang;
+        FixtureFinder.setDateWithCurrentLanguage(FixtureFinder.currentDateSelected, lang);
         var localizer = translator(lang);
         updateNavBarBrand(localizer);
         updateTeamFilter(localizer);
